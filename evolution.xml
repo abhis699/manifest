@@ -14,6 +14,10 @@
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/tiramisu" />
 
+  <remote  name="derp"
+           fetch="https://github.com/DerpFest-AOSP"
+           revision="13" />
+
   <!-- GitHub (Evolution X Devices) -->
   <remote  name="evo-devices"
            fetch="https://github.com/Evolution-X-Devices"
@@ -74,6 +78,7 @@
   <project path="manifest" name="manifest" remote="evo" />
 
   <!-- Hardware repos -->
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="derp" />
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
